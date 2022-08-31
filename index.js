@@ -63,12 +63,12 @@ var questionsList = [
     answer :'d',
   },
       {
-    question:"Q10.Can you guess the first Letter of my school crush? \na.M \nb.S \nc.P \nd.N \nEnter your answer : ",
-    answer :'c',
+    question:"Q10.Who Is my best friend? \na.Vicky \nb.Aryan \nc.Priyanshu \nd.Aman \nEnter your answer : ",
+    answer :'a',
   },
       {
-    question:"Q11.Can you guess the first Letter of my college crush? \na.P \nb.M \nc.K\nd.S \nEnter your answer : ",
-    answer :'b',
+    question:"Q11.What do I like the most \na.travelling \nb.photography \nc.gaming\nEnter your answer : ",
+    answer :'a',
   },
   
   
@@ -99,8 +99,8 @@ for(var i =0 ; i<questionsList.length ; i++) {
 
 
 for(var i=0 ; i<highScores.length ; i++) {
-  currentUserName = highScores[i].name
-  currentUserScore = highScores[i].score
+  var currentUserName = highScores[i].name
+  var currentUserScore = highScores[i].score
 
   if(currentUserScore < score) {
   console.log(chalk.yellow(`Congratulation You have Beaten 
